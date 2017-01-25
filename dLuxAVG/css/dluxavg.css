@@ -1,0 +1,100 @@
+html,body{
+	width: 100%;
+	height: 100%;
+}
+
+/*
+=================
+User Info Style
+=================
+*/
+#user-info-section{
+	border-top: 1px solid #424242;
+	border-bottom: 1px solid #424242;
+	border-radius: 0px;
+	font-size: 17px;
+	width: 100%;
+	height: 100%;
+	text-align: center;
+	background: #64B5F6;
+}
+
+#user-name, #user-number{
+	width: 70%;
+	height: 45px;
+	margin: 5px;
+	border-radius: 2px;
+	border: 1px solid #222;
+	outline: none !important;
+	padding: 5px;
+}
+
+#user-name:focus, #user-number:focus,
+#thirty-sec-time:hover, #sixty-sec-time:hover,
+#onetwenty-sec-time:hover
+{
+	border: 1px solid #222 !important;
+	box-shadow: 0 8px 6px -6px #424242;
+	transition: .4s ease;
+	-webkit-transition: .4s ease;
+	-moz-transition: .4s ease;
+}
+
+#user-info{
+	margin-top: 20%;
+	height: 100%;
+	font-family: Athiti;
+}
+
+#thirty-sec-time, #sixty-sec-time,
+#onetwenty-sec-time {
+	width: 20%;
+	height: 40px;
+	margin-top: 10px;
+	background: #fed123;
+	border: 1px solid #07294D;
+	outline: none !important;
+}
+
+#thirty-sec-time:hover, #sixty-sec-time:hover,
+#onetwenty-sec-time:hover {
+	background: #222;
+	color: #fed123;
+	transition: .2s ease;
+	-webkit-transition: .2s ease;
+	-moz-transition: .2s ease;
+}
+
+/*
+================
+UI Style
+================
+*/
+
+#time-display-div{
+	font-family:Athiti; 
+	margin-top: 5%;
+	font-size: 20px;
+	text-align: center;
+}
+
+#emotion-display-div{
+	font-family:Athiti; 
+	margin-top: 5%;
+	font-size: 20px;
+	text-align: center;
+}
+
+#ui-container{
+	width: 100%;
+	height: 100%;
+	border-bottom: 1px solid #757575;
+}
+
+#ui-section{
+	margin-top:10%; 
+	background: url("../AV SPACE GUI.png");
+	width: 750px !important;
+	height: 550px !important;
+	background-size: cover;
+}
