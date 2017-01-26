@@ -33,12 +33,12 @@
 			<div class="col-lg-12">
 				<div class="col-lg-3"></div>
 				<div class="col-lg-6" id="user-info">
-					<input id="user-name" placeholder="full name" type="text"/>
+					<!--<input id="user-name" placeholder="full name" type="text"/>-->
 					<input id="user-number" placeholder="user number" type="text"/>
 					<div id="time-select">
-						<button class="time-button" id="thirty-sec-time" onclick="setDuration(0.1)">30s</button> 
-						<button class="time-button" id="sixty-sec-time" onclick="setDuration(1)">60s</button>
-						<button class="time-button" id="onetwenty-sec-time" onclick="setDuration(1.5)">120s</button>
+						<button class="time-button" id="thirty-sec-time" onclick="setDuration(2.1)">126s</button> 
+						<button class="time-button" id="sixty-sec-time" onclick="setDuration(2.5)">160s</button>
+						<button class="time-button" id="onetwenty-sec-time" onclick="setDuration(6)">360s</button>
 					</div>
 				</div>
 				<div class="col-lg-3"></div>
@@ -122,7 +122,7 @@
 
         		minutes = minutes < 10 ? "0" + minutes : minutes;
         		seconds = seconds < 10 ? "0" + seconds : seconds;
-        		detail += name + "," + number + "," + emotion+","+ minutes + ":" + seconds +"--";
+        		detail += number + "," + emotion+","+ minutes + ":" + seconds +"--";
 
         		display.text(minutes + ":" + seconds);
         		if (--timer < 0) {
@@ -132,7 +132,7 @@
 					})
 					clearInterval(inter);
 					display.text("");
-					saveData(detail, "_AVGDATA_" + name+ "_" + number + ".txt")
+					saveData(detail, "_AVGDATA_" + number + ".txt")
         		}
     		}, 1000);
 		}
