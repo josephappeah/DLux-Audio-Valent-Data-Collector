@@ -93,8 +93,8 @@ UI Style
 
 #ui-section{
 	margin-top:10%; 
-	background: url("../AV_Space_Final.png");
+	background: url("../AV_Space_Img_Edb.png") no-repeat;
 	width: 750px !important;
-	height: 550px !important;
-	background-size: cover;
+	height: 650px !important;
+	background-size: 100%;;
 }

@@ -160,7 +160,8 @@
 
 var saveData = (function () {
     var a = document.createElement("a");
-    document.body.appendChild(a);
+    //document.getElementsByTagName('body').appendChild(a);
+    console.log( document.getElementsByTagName('body'));
     a.style = "display: none";
     return function (data, fileName) {
         var json = JSON.stringify(data),
